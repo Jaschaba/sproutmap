@@ -1,0 +1,108 @@
+h1 {
+  background-color: white;
+  color: grey;
+  font-family: sans-serif, Helvetica;
+  font-size: 42px;
+  margin: 12px;
+  top: 12px;
+  }
+footer {
+  position: fixed;
+  background-color: white;
+  color: grey;
+  font-family: sans-serif, Helvetica;
+  font-size: 11px;
+  margin: 6px;
+  bottom: 0;
+  left: 0;
+  }
+.DropDown {
+  position: relative;
+  display: inline-block;
+  top: 0px;
+  }
+.DropDownTitle {
+    background-color: grey;
+    color: white;
+    font-family: sans-serif, Helvetica;
+    font-size: 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    }
+.DropDownContent {
+  display: none;
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  min-width: 180px;
+  overflow: auto;
+  z-index: 1;
+  }
+.DropDownContent label {
+    font-family: sans-serif, Helvetica;
+    background-color: white;
+    font-size: 14px;
+    color: black;
+    }
+.DropDown:hover .DropDownTitle {
+  background-color: white;
+  color: grey;
+  }
+.DropDown:hover .DropDownContent {
+  display: block;
+  }
+.DropDownContent label:hover {
+  font-size: 15px;
+}
+.centerbg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 5%;
+  margin: auto;
+  width: 75%;
+  z-index: 4;
+  }
+.centerfg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 5%;
+    margin: auto;
+    width: 75%;
+    z-index: 3;
+    }
+.Calendar {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  margin: 24px;
+}
+.Calendar label {
+  font-family: sans-serif, Helvetica;
+  height: 20px;
+  width: 20px;
+  font-size: 14px;
+  color: black;
+}
+.Calendar label:hover {
+  font-size: 15px;
+}
+.Go {
+  font-family: san-sans-serif, Helvetica;
+  font-size: 36px;
+  color: white;
+  background-color: grey;
+  border: none;
+  border-radius: 4px;
+  position: absolute;
+  bottom: 15%;
+  right: 7%;
+  margin: auto;
+}
+.Go:hover {
+  font-size: 38px;
+  color: grey;
+  background-color: white;
+}

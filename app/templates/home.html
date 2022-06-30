@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% block bodycontent %}
+<h1>Sprout Map</h1><br>
+{% if results %}
+  {% for instance in results %}
+  {% for path in instance %}
+  {% for i in path %}
+    <img src="static/{{ i }}" class="centerfg">
+  {% endfor %}
+  {% endfor %}
+  {% endfor %}
+{% else %}
+<img src="static/Img/aa/start.png" class="centerfg">
+{% endif %}
+<form method="POST" action:"/">
+<nav>
+<div class="DropDown">
+  <button class="DropDownTitle">Fruit</button>
+  <div class="DropDownContent">
+      <label for="apple">Apple</label>
+      <input type="checkbox" value="apl" id= "apple" name="crop_check"><br>
+      <label for="strawberry">Strawberry</label>
+      <input type="checkbox" value='strbry' id="strawberry" name="crop_check"><br>
+      <label for="grape">Grapes</label>
+      <input type="checkbox" value='grp' id="grape" name="crop_check"><br>
+  </div>
+</div>
+<div class="DropDown">
+  <button class="DropDownTitle">Vegetables</button>
+  <div class="DropDownContent">
+      <label for="tomato">Tomato</label>
+      <input type="checkbox" value='tomt' id="tomato" name="crop_check"><br>
+      <label for="potato">Potato</label>
+      <input type="checkbox" value='ptt' id="potato" name="crop_check"><br>
+  </div>
+</div>
+</nav>
+<nav>
+<div class = "Calendar">
+    <label for="january">January</label>
+    <input type="radio" name="month_check" id= "january" value="jan"><br>
+    <label for="february">February</label>
+    <input type="radio" name="month_check" id="february" value="feb"><br>
+    <label for="march">March</label>
+    <input type="radio" name="month_check" id="march" value="mar"><br>
+    <label for="april">April</label>
+    <input type="radio" name="month_check" id="april" value="apr"><br>
+    <label for="May">May</label>
+    <input type="radio" name="month_check" id="May" value="may"><br>
+    <label for="june">June</label>
+    <input type="radio" name="month_check" id="june" value="jun"><br>
+    <label for="july">July</label>
+    <input type="radio" name="month_check" id="july" value="jul"><br>
+    <label for="august">August</label>
+    <input type="radio" name="month_check" id="august" value="aug"><br>
+    <label for="september"">September</label>
+    <input type="radio" name="month_check" id="september" value="sep"><br>
+    <label for="october">October</label>
+    <input type="radio" name="month_check" id="october" value="oct"><br>
+    <label for="november">November</label>
+    <input type="radio" name="month_check" id="november" value="nov"><br>
+    <label for="december">December</label>
+    <input type="radio" name="month_check" id="december" value="dec"><br>
+</div>
+</nav>
+<input type="submit" value="Sprout!" class="Go">
+</form>
+<img src="{{ url_for('static', filename='Img/myWorldMapOL.png')}}" class="centerbg">
+<footer>This is a project by Jascha Batzies. Leuphana University, WiSe2021/22, Tech Basics II</footer>
+{% endblock %}
