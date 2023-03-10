@@ -73,21 +73,96 @@ footer {
     width: 75%;
     z-index: 3;
     }
-.Calendar {
-  position: absolute;
-  bottom: 24px;
-  left: 24px;
-  margin: 24px;
-}
-.Calendar label {
+.CalendarContent {
   font-family: sans-serif, Helvetica;
-  height: 20px;
-  width: 20px;
   font-size: 14px;
   color: black;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  bottom: 10%;
+  left: 5%;
+  margin: 24px;
+  width: 40px;
+  height: 40px;
 }
-.Calendar label:hover {
-  font-size: 15px;
+.CalendarContent:nth-child(1) {
+  transform: rotate(284deg) translate(65px) rotate(89deg);
+  background-color: #729ec1;
+  border-radius: 4px;
+  opacity: 0.75;
+}
+.CalendarContent:nth-child(2) {
+  transform: rotate(316deg) translate(65px) rotate(89deg);
+  background-color: #66a5c5;
+  border-radius: 4px;
+  opacity: 0.75;
+}
+.CalendarContent:nth-child(3) {
+  transform: rotate(346deg) translate(65px) rotate(89deg);
+  background-color: #50cc96;
+  border-radius: 4px;
+  opacity: 0.75;
+}
+.CalendarContent:nth-child(4) {
+  transform: rotate(16deg) translate(65px) rotate(89deg);
+  background-color: #53ca61;
+  border-radius: 4px;
+  opacity: 0.75;
+}
+.CalendarContent:nth-child(5) {
+  transform: rotate(46deg) translate(65px) rotate(89deg);
+  background-color: #52ae43;
+  border-radius: 4px;
+  opacity: 0.75;
+}
+.CalendarContent:nth-child(6) {
+  transform: rotate(76deg) translate(65px) rotate(89deg);
+  background-color: #b5df65;
+  border-radius: 4px;
+  opacity: 0.75;
+}
+.CalendarContent:nth-child(7) {
+  transform: rotate(106deg) translate(65px) rotate(89deg);
+  background-color: #f0f266;
+  border-radius: 4px;
+  opacity: 0.75;
+}
+.CalendarContent:nth-child(8) {
+  transform: rotate(133deg) translate(65px) rotate(89deg);
+  background-color: #c64d2c;
+  border-radius: 4px;
+  opacity: 0.75;
+}
+.CalendarContent:nth-child(9) {
+  transform: rotate(163deg) translate(65px) rotate(89deg);
+  background-color: #c6712c;
+  border-radius: 4px;
+  opacity: 0.75;
+}
+.CalendarContent:nth-child(10) {
+  transform: rotate(193deg) translate(65px) rotate(89deg);
+  background-color: #3c6c30;
+  border-radius: 4px;
+  opacity: 0.75;
+}
+.CalendarContent:nth-child(11) {
+  transform: rotate(223deg) translate(65px) rotate(89deg);
+  background-color: #2b7771;
+  border-radius: 4px;
+  opacity: 0.75;
+}
+.CalendarContent:nth-child(12) {
+  transform: rotate(253deg) translate(65px) rotate(89deg);
+  background-color: #374a8e;
+  border-radius: 4px;
+  opacity: 0.75;
+}
+.CalendarContent:hover{
+  font-size: 16px;
+  opacity: 1;
 }
 .Go {
   font-family: san-sans-serif, Helvetica;
